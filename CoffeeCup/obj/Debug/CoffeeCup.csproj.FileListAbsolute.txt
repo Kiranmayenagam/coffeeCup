@@ -1,0 +1,12 @@
+C:\Users\Kirru\Desktop\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeCup.exe.config
+C:\Users\Kirru\Desktop\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeCup.exe
+C:\Users\Kirru\Desktop\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeCup.pdb
+C:\Users\Kirru\Desktop\Coffee Cup\CoffeeCup\CoffeeCup\obj\Debug\CoffeeCup.csprojResolveAssemblyReference.cache
+C:\Users\Kirru\Desktop\Coffee Cup\CoffeeCup\CoffeeCup\obj\Debug\CoffeeCup.exe
+C:\Users\Kirru\Desktop\Coffee Cup\CoffeeCup\CoffeeCup\obj\Debug\CoffeeCup.pdb
+C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\obj\Debug\CoffeeCup.csprojResolveAssemblyReference.cache
+C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\obj\Debug\CoffeeCup.exe
+C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\obj\Debug\CoffeeCup.pdb
+C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeCup.exe.config
+C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeCup.exe
+C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeCup.pdb
