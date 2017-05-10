@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CoffeeCup
 {
-    enum Gender
+    public enum Gender
     {
         Female,
         Male
@@ -14,7 +14,7 @@ namespace CoffeeCup
     /// <summary>
     /// This is a employee class where we can entry complete employee details. 
     /// </summary>
-    class employee
+    public class employee
     {
         /// <summary>
         /// Here we created a variable for lastemployeeid so that very new employee will get a new id number. 
@@ -37,6 +37,7 @@ namespace CoffeeCup
         public int ContactNo { get; set; }
         public Gender  Gender { get; set; }
         public string Emailid { get; set; }
+        public string  Password { get; set; }
         public decimal Salary { get;set; }
         #endregion
         #region Constructors
@@ -77,6 +78,10 @@ namespace CoffeeCup
         {
             Emailid = emailId;
         }
+        public employee(string firstName,string lastName,string address,string city,int pincode,int contactNo,Gender gender,string emailid,string password) :this(emailid)
+        {
+            Password = password;
+        }
         /// <summary>
         /// employee
         /// </summary>
@@ -108,13 +113,24 @@ namespace CoffeeCup
         /// <param name="salary">
         /// Salary of Employee
         /// </param>
-        public employee(string firstName, string lastName, string address, string city, int pincode, int contactNo,Gender gender,string emailid,decimal salary) : this(emailid)
+        public employee(string firstName, string lastName, string address, string city, int pincode, int contactNo,Gender gender,string emailid,string password,decimal salary) : this(password)
         {
             Salary = salary;
         }
        #endregion
         #region Methods
-        public string Update(string firstName,string lastName,string address,string city,int pincode,int contactNo,Gender gender,string emailid,decimal salary)
+        public string login(string emailid,string password)
+        {
+            
+            Emailid = emailid;
+            Password = password;
+            return "login Correct";
+        }
+        public void logout ()
+        {
+            Console.Write("See you soon");
+        }
+        public string Update(string firstName,string lastName,string address,string city,int pincode,int contactNo,Gender gender,string emailid,string password,decimal salary)
         {
             
             FirstName = firstName;
@@ -125,6 +141,7 @@ namespace CoffeeCup
             ContactNo = contactNo;
             Gender = gender;
             Emailid = emailid;
+            Password = password;
             Salary = salary;
             return "Employee info update";
          }

@@ -5,7 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace CoffeeCup
-{
+{/// <summary>
+/// enum is that which creates a data type to a product 
+/// Name of products is that there are products 
+/// </summary>
     enum NameofProduct
     {
         Darkroast,
@@ -19,10 +22,10 @@ namespace CoffeeCup
     }
     enum Weights
     {
-        
-       
-      
-    }
+        TenOz,
+        halfpound,
+        onepound,
+     }
     class Product
     {
         #region Variables

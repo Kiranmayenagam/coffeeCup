@@ -48,9 +48,11 @@ namespace CoffeeCup
                         var gender = (Gender)(Convert.ToInt32(Console.ReadLine()) - 1);
                         Console.WriteLine("EmailId");
                         var emailid = Console.ReadLine();
+                        Console.WriteLine("Password");
+                        var password = Console.ReadLine();
                         Console.WriteLine("Salary");
                         var salary = Convert.ToDecimal (Console.ReadLine());
-                        var employee = Owner.EnterEmployeeDetails(firstName, lastName, address, city, pincode, contactno, gender, emailid, salary);
+                        var employee = Owner.EnterEmployeeDetails(firstName, lastName, address, city, pincode, contactno, gender, emailid,password, salary);
                         Console.WriteLine($"EmployeeId:{employee.EmployeeId},FirstName:{employee.FirstName},LastName:{employee.LastName},Address:{employee.Address},City:{employee.City},Pincode:{employee.Pincode},ContactNo:{employee.ContactNo},Gender:{employee.Gender},EmailId:{employee.Emailid},Salary:{employee.Salary:C}");
                         break;
                     case "2":

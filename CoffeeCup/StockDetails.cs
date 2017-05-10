@@ -10,8 +10,8 @@ namespace CoffeeCup
     {
         #region Properties
         public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public string  BrandName { get; set; }
+        public NameofProduct ProductName { get; set; }
+        public NameOfBrand  BrandName { get; set; }
         public string  AvaiableQuty { get; set; }
         #endregion
         #region Constructions
@@ -19,15 +19,15 @@ namespace CoffeeCup
         {
             ProductId = ProductId;
         }
-        public StockDetails(string productName) :this()
+        public StockDetails(NameofProduct productName) :this()
         {
             ProductName = productName;
         }
-        public StockDetails(int productId,string productName,string brandName) : this(productName)
+        public StockDetails(int productId,NameofProduct productName,NameOfBrand brandName) : this(productName)
         {
             BrandName = brandName;
         }
-        public StockDetails(int productId,string productName,string brandName,string avaiablequty) : this(brandName)
+        public StockDetails(int productId,NameofProduct productName,NameOfBrand brandName,string avaiablequty) : this()
         {
             AvaiableQuty = avaiablequty;
         }
