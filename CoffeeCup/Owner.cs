@@ -21,7 +21,7 @@ namespace CoffeeCup
         }
         public static List<employee> GetAllEmployeeDetails()
         {
-            return employees;
+            return db.employees.ToList();
         }
         public static employee DeteleEmployeeDetails(int employeeid)
         {

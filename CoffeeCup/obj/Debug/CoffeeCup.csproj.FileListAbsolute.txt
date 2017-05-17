@@ -11,12 +11,15 @@ C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeC
 C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeCup.exe
 C:\Users\Kirru\Desktop\projects\Coffee Cup\CoffeeCup\CoffeeCup\bin\Debug\CoffeeCup.pdb
 C:\github\coffeeCup2\CoffeeCup\obj\Debug\CoffeeCup.csprojResolveAssemblyReference.cache
-C:\github\coffeeCup2\CoffeeCup\obj\Debug\CoffeeCup.exe
 C:\github\coffeeCup2\CoffeeCup\obj\Debug\CoffeeCup.pdb
-C:\github\coffeeCup2\CoffeeCup\bin\Debug\CoffeeCup.exe.config
-C:\github\coffeeCup2\CoffeeCup\bin\Debug\CoffeeCup.exe
 C:\github\coffeeCup2\CoffeeCup\bin\Debug\EntityFramework.dll
 C:\github\coffeeCup2\CoffeeCup\bin\Debug\EntityFramework.SqlServer.dll
 C:\github\coffeeCup2\CoffeeCup\bin\Debug\EntityFramework.xml
 C:\github\coffeeCup2\CoffeeCup\bin\Debug\EntityFramework.SqlServer.xml
 C:\github\coffeeCup2\CoffeeCup\bin\Debug\CoffeeCup.pdb
+C:\github\coffeeCup2\CoffeeCup\obj\Debug\CoffeeCup.Migrations.InitialCreate.resources
+C:\github\coffeeCup2\CoffeeCup\obj\Debug\CoffeeCup.csproj.GenerateResource.Cache
+C:\github\coffeeCup2\CoffeeCup\obj\Debug\CoffeeCup.Migrations.Realtionship.resources
+C:\github\coffeeCup2\CoffeeCup\bin\Debug\CoffeeCup.dll.config
+C:\github\coffeeCup2\CoffeeCup\bin\Debug\CoffeeCup.dll
+C:\github\coffeeCup2\CoffeeCup\obj\Debug\CoffeeCup.dll
