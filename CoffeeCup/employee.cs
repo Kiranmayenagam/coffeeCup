@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +30,7 @@ namespace CoffeeCup
         /// </summary>
         #region properties
         ///employeeid has a private set in which only owner can give the identy to the employee.
+        [Key]
         public int EmployeeId { get; private set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -39,6 +42,10 @@ namespace CoffeeCup
         public string Emailid { get; set; }
         public string  Password { get; set; }
         public decimal Salary { get;set; }
+
+        
+
+        public virtual ICollection<employee> employees { get; set; }
         #endregion
         #region Constructors
 

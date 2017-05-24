@@ -10,12 +10,12 @@ namespace CoffeeCup
     /// here we enter the details of Customer and can start to login id by entering username and password.
     /// </summary>
 
-    class Customer
+    public class Customer
     {
         #region properties
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string EmailAddress { get; set; }
+        public string EmailAddress { get; set;}
         public string UserName { get; set; }
         public string Password { get; set; }
         public string Address { get; set; }
@@ -24,6 +24,8 @@ namespace CoffeeCup
         public int PinCode{ get; set; }
         public string Country { get; set; }
         public int PhoneNumber { get; set; }
+
+        public virtual ICollection<Customer> customers { get; set; }
         #endregion
         #region Construction
         public Customer()

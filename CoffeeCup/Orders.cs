@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +11,7 @@ namespace CoffeeCup
     /// <summary>
     /// This class defines about the Orders and checks 
     /// </summary>
-    class Orders
+    public class Orders
     {
         #region Variables
         /// <summary>
@@ -21,6 +23,7 @@ namespace CoffeeCup
         /// <summary>
         /// Enter the complete data of the order.
         /// </summary>
+        [Key]
         public int CheckNo { get; private set; }
         public DateTime OrderDate { get; set; }
         public string  CustomerName { get; set; }
@@ -33,7 +36,7 @@ namespace CoffeeCup
         public decimal GrandTotal { get; set; }
         public decimal Discount { get; set; }
         public decimal FinalAmount { get; set; }
-        #endregion
+ #endregion
         #region Construction
         /// <summary>
         /// constructors are created 

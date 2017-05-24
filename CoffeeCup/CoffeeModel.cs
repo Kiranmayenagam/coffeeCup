@@ -21,6 +21,8 @@ namespace CoffeeCup
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<employee> employees { get; set; }
+        public virtual DbSet<Customer> customers { get; set; }
+        public virtual DbSet <Orders> order { get; set; }
     }
 
     //public class MyEntity

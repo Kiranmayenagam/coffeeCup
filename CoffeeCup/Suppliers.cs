@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace CoffeeCup
         private static int lastSupplierId = 0;
         #endregion
         #region Properties
+        [Key]
         public int SupplierId { get; private set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

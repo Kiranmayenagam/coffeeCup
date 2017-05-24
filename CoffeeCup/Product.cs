@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,29 +10,30 @@ namespace CoffeeCup
 /// enum is that which creates a data type to a product 
 /// Name of products is that there are products 
 /// </summary>
-    enum NameofProduct
+    public enum NameofProduct
     {
         Darkroast,
         Semiroast,
         Instantcoffee
     }
-    enum NameOfBrand
+    public enum NameOfBrand
     {
         Starbucks,
         BarCoffee
     }
-    enum Weights
+    public enum Weights
     {
         TenOz,
         halfpound,
         onepound,
      }
-    class Product
+    public class Product
     {
         #region Variables
         private static int productid = 0;
         #endregion
         #region properties
+        [Key]
         public int ProductId { get;set; }
         public NameofProduct ProductName { get; set; }
         public NameOfBrand BrandName { get; set; }
