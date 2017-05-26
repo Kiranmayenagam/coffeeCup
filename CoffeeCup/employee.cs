@@ -16,7 +16,7 @@ namespace CoffeeCup
     /// <summary>
     /// This is a employee class where we can entry complete employee details. 
     /// </summary>
-    public class employee
+    public class Employee
     {
         /// <summary>
         /// Here we created a variable for lastemployeeid so that very new employee will get a new id number. 
@@ -45,47 +45,47 @@ namespace CoffeeCup
 
         
 
-        public virtual ICollection<employee> employees { get; set; }
+        public virtual ICollection<Employee> employees { get; set; }
         #endregion
         #region Constructors
 
-        public employee()
+        public Employee()
         {
             EmployeeId = ++lastEmployeeId;
         }
-        public employee(string firstName) : this()
+        public Employee(string firstName) : this()
         {
             FirstName = firstName;
         }
-        public employee(string firstName,string lastName) : this(firstName)
+        public Employee(string firstName,string lastName) : this(firstName)
         {
             LastName = lastName;
         }
-        public employee(string firstName,string lastName,string address) : this(lastName)
+        public Employee(string firstName,string lastName,string address) : this(lastName)
         {
             Address = address;
         }
-        public employee(string firstName,string lastName,string address,string city) :this(address)
+        public Employee(string firstName,string lastName,string address,string city) :this(address)
         {
             City = city;
         }
-        public employee(int pincode) :this()
+        public Employee(int pincode) :this()
         {
             Pincode = pincode;
         }
-        public employee(string firstName, string lastName, string address, string city,int pincode,int contactNo) : this(pincode)
+        public Employee(string firstName, string lastName, string address, string city,int pincode,int contactNo) : this(pincode)
         {
             ContactNo = contactNo;
         }
-        public employee(string firstName, string lastName, string address, string city, int pincode, int contactNo,Gender gender) : this(contactNo)
+        public Employee(string firstName, string lastName, string address, string city, int pincode, int contactNo,Gender gender) : this(contactNo)
         {
             Gender = gender;
         }
-        public employee(string firstName, string lastName, string address, string city, int pincode, int contactNo,Gender gender,string emailId) : this()
+        public Employee(string firstName, string lastName, string address, string city, int pincode, int contactNo,Gender gender,string emailId) : this()
         {
             Emailid = emailId;
         }
-        public employee(string firstName,string lastName,string address,string city,int pincode,int contactNo,Gender gender,string emailid,string password) :this(emailid)
+        public Employee(string firstName,string lastName,string address,string city,int pincode,int contactNo,Gender gender,string emailid,string password) :this(emailid)
         {
             Password = password;
         }
@@ -120,7 +120,7 @@ namespace CoffeeCup
         /// <param name="salary">
         /// Salary of Employee
         /// </param>
-        public employee(string firstName, string lastName, string address, string city, int pincode, int contactNo,Gender gender,string emailid,string password,decimal salary) : this(password)
+        public Employee(string firstName, string lastName, string address, string city, int pincode, int contactNo,Gender gender,string emailid,string password,decimal salary) : this(password)
         {
             Salary = salary;
         }

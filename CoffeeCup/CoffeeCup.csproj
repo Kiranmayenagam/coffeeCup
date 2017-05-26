@@ -54,9 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewProduct.cs" />
+    <Compile Include="NewProduct.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="employee.cs" />
+    <Compile Include="Employee.cs" />
     <Compile Include="CoffeeModel.cs" />
     <Compile Include="Migrations\201705100620026_InitialCreate.cs" />
     <Compile Include="Migrations\201705100620026_InitialCreate.Designer.cs">

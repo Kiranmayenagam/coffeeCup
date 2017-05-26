@@ -1,36 +1,38 @@
 ﻿ using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CoffeeCup
 {
-    class AddNewProduct
+    class NewProduct
     {
         #region Variables
         private static int lastItemId = 0123;
         #endregion
         #region properies 
+        [Key]
         public int ItemId { get; set; }
         public string ItemName { get; set; }
         public  decimal Price { get; set; }
         public string Quantity{ get; set; }
         #endregion
         #region Construction
-        public AddNewProduct()
+        public NewProduct()
         {
             ItemId = ++lastItemId;
         }
-        public AddNewProduct(string itemName) : this()
+        public NewProduct(string itemName) : this()
         {
             ItemName = itemName;
         }
-        public AddNewProduct(decimal price) :this()
+        public NewProduct(decimal price) :this()
         {
             Price = price;
         }
-        public AddNewProduct(int itemId,string itemName,decimal price,string quantity) : this(price)
+        public NewProduct(int itemId,string itemName,decimal price,string quantity) : this(price)
         {
             Quantity = quantity;
         }

@@ -8,24 +8,24 @@ namespace CoffeeCup
 {
     public static class Owner
     {
-        private static List<employee> employees = new List<employee>();
+        private static List<Employee> employees = new List<Employee>();
         private static CoffeeModel db = new CoffeeModel();
-        public static employee EnterEmployeeDetails(string firstName, string lastName, string address, string city, int pincode, int contactno, Gender gender, string emailid,string password, decimal salary)
+        public static Employee EnterEmployeeDetails(string firstName, string lastName, string address, string city, int pincode, int contactno, Gender gender, string emailid,string password, decimal salary)
         {
-            var employee = new employee(firstName, lastName, address, city, pincode, contactno, gender, emailid,password, salary);
+            var employee = new Employee(firstName, lastName, address, city, pincode, contactno, gender, emailid,password, salary);
             employee.Update(firstName, lastName, address, city, pincode, contactno, gender, emailid,password, salary);
             employee.login(emailid, password);
             db.employees.Add(employee);
             db.SaveChanges();
             return employee;
         }
-        public static List<employee> GetAllEmployeeDetails()
+        public static List<Employee> GetAllEmployeeDetails()
         {
             return db.employees.ToList();
         }
-        public static employee DeteleEmployeeDetails(int employeeid)
+        public static Employee DeteleEmployeeDetails(int employeeid)
         {
-            var employee = new employee(employeeid);
+            var employee = new Employee(employeeid);
             employee.Delete(employeeid);
             return employee;
         }
